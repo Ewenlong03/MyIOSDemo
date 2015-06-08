@@ -1,0 +1,6 @@
+framework module BCUPersonalPay {
+  umbrella header "BCUPersonalPay.h"
+
+  export *
+  module * { export * }
+}
