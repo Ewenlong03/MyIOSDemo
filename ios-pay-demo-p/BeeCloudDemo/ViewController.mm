@@ -150,7 +150,7 @@
     NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"value",@"key", nil];
     NSString *outTradeNo = [BCUPersonalPay genOutTradeNo];
     
-    [BCUPersonalPay reqUPersonalPay:kTraceID body:kBody outTradeNo:outTradeNo totalFee:@"1" viewController:self optional:dict payblock:^(BOOL success, NSString *strMsg, NSError *error) {
+    [BCUPersonalPay reqUPersonalPay:kTraceID body:kBody outTradeNo:outTradeNo totalFee:@"10" viewController:self optional:dict payblock:^(BOOL success, NSString *strMsg, NSError *error) {
             if (success) {
                 //
             } else {

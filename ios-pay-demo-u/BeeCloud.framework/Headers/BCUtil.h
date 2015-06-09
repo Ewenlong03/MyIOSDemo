@@ -183,6 +183,15 @@
 + (BOOL)isPureInt:(NSString *)str;
 
 /**
+ *  Check whether the string is pure float
+ *
+ *  @param str Str
+ *
+ *  @return YES if the string is pure float.
+ */
++ (BOOL)isPureFloat:(NSString *)str;
+
+/**
  *  get IP address
  *
  *  @param preferIPv4 preferIPv4

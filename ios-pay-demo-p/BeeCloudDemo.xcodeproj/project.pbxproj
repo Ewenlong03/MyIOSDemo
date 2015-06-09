@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		367626C01B0F140A00D3681A /* BCWXPay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367626BF1B0F140A00D3681A /* BCWXPay.framework */; };
-		367626C31B0F141D00D3681A /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367626C11B0F141D00D3681A /* AlipaySDK.framework */; };
-		367626C41B0F141D00D3681A /* BCAliPay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367626C21B0F141D00D3681A /* BCAliPay.framework */; };
-		367626C61B0F142B00D3681A /* BeeCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367626C51B0F142B00D3681A /* BeeCloud.framework */; };
+		363486E51B2576B4003FA4DF /* BCAliPay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363486E11B2576B4003FA4DF /* BCAliPay.framework */; };
+		363486E61B2576B4003FA4DF /* BCWXPay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363486E21B2576B4003FA4DF /* BCWXPay.framework */; };
+		363486E71B2576B4003FA4DF /* BeeCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363486E31B2576B4003FA4DF /* BeeCloud.framework */; };
+		363486E81B2576B4003FA4DF /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363486E41B2576B4003FA4DF /* AlipaySDK.framework */; };
 		367626C81B0F149A00D3681A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 367626C71B0F149A00D3681A /* libsqlite3.dylib */; };
 		367626CA1B0F14A300D3681A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 367626C91B0F14A300D3681A /* libz.dylib */; };
 		367626CC1B0F14AF00D3681A /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 367626CB1B0F14AF00D3681A /* libc++.dylib */; };
@@ -26,24 +26,13 @@
 		A8C2090C1A83924E0060DAE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8C2090A1A83924E0060DAE7 /* Main.storyboard */; };
 		A8C2090E1A83924E0060DAE7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8C2090D1A83924E0060DAE7 /* Images.xcassets */; };
 		A8C209111A83924E0060DAE7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8C2090F1A83924E0060DAE7 /* LaunchScreen.xib */; };
-		A8C2091D1A83924E0060DAE7 /* BeeCloudDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C2091C1A83924E0060DAE7 /* BeeCloudDemoTests.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A8C209171A83924E0060DAE7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8C208F51A83924E0060DAE7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A8C208FC1A83924E0060DAE7;
-			remoteInfo = BeeCloudDemo;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		367626BF1B0F140A00D3681A /* BCWXPay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BCWXPay.framework; path = Pods/BeeCloud_wxPay/BCWXPay.framework; sourceTree = "<group>"; };
-		367626C11B0F141D00D3681A /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlipaySDK.framework; path = Pods/BeeCloud_aliPay/AlipaySDK.framework; sourceTree = "<group>"; };
-		367626C21B0F141D00D3681A /* BCAliPay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BCAliPay.framework; path = Pods/BeeCloud_aliPay/BCAliPay.framework; sourceTree = "<group>"; };
-		367626C51B0F142B00D3681A /* BeeCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BeeCloud.framework; path = Pods/BeeCloud/BeeCloud.framework; sourceTree = "<group>"; };
+		363486E11B2576B4003FA4DF /* BCAliPay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BCAliPay.framework; sourceTree = "<group>"; };
+		363486E21B2576B4003FA4DF /* BCWXPay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BCWXPay.framework; sourceTree = "<group>"; };
+		363486E31B2576B4003FA4DF /* BeeCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeeCloud.framework; sourceTree = "<group>"; };
+		363486E41B2576B4003FA4DF /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
 		367626C71B0F149A00D3681A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		367626C91B0F14A300D3681A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		367626CB1B0F14AF00D3681A /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
@@ -63,7 +52,6 @@
 		A8C2090B1A83924E0060DAE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8C2090D1A83924E0060DAE7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A8C209101A83924E0060DAE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		A8C209161A83924E0060DAE7 /* BeeCloudDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeeCloudDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8C2091B1A83924E0060DAE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8C2091C1A83924E0060DAE7 /* BeeCloudDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeeCloudDemoTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +61,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				363486E51B2576B4003FA4DF /* BCAliPay.framework in Frameworks */,
+				363486E61B2576B4003FA4DF /* BCWXPay.framework in Frameworks */,
+				363486E71B2576B4003FA4DF /* BeeCloud.framework in Frameworks */,
+				363486E81B2576B4003FA4DF /* AlipaySDK.framework in Frameworks */,
 				36D196F11B213F1400961989 /* BCUPersonalPay.framework in Frameworks */,
 				367626D61B0F14F900D3681A /* MobileCoreServices.framework in Frameworks */,
 				367626D41B0F14EC00D3681A /* SystemConfiguration.framework in Frameworks */,
@@ -82,17 +74,6 @@
 				367626CC1B0F14AF00D3681A /* libc++.dylib in Frameworks */,
 				367626CA1B0F14A300D3681A /* libz.dylib in Frameworks */,
 				367626C81B0F149A00D3681A /* libsqlite3.dylib in Frameworks */,
-				367626C61B0F142B00D3681A /* BeeCloud.framework in Frameworks */,
-				367626C31B0F141D00D3681A /* AlipaySDK.framework in Frameworks */,
-				367626C41B0F141D00D3681A /* BCAliPay.framework in Frameworks */,
-				367626C01B0F140A00D3681A /* BCWXPay.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A8C209131A83924E0060DAE7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +83,10 @@
 		82CB2211661D33E926B50F3F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				363486E11B2576B4003FA4DF /* BCAliPay.framework */,
+				363486E21B2576B4003FA4DF /* BCWXPay.framework */,
+				363486E31B2576B4003FA4DF /* BeeCloud.framework */,
+				363486E41B2576B4003FA4DF /* AlipaySDK.framework */,
 				36D196F01B213F1400961989 /* BCUPersonalPay.framework */,
 				367626D51B0F14F900D3681A /* MobileCoreServices.framework */,
 				367626D31B0F14EC00D3681A /* SystemConfiguration.framework */,
@@ -111,10 +96,6 @@
 				367626CB1B0F14AF00D3681A /* libc++.dylib */,
 				367626C91B0F14A300D3681A /* libz.dylib */,
 				367626C71B0F149A00D3681A /* libsqlite3.dylib */,
-				367626C51B0F142B00D3681A /* BeeCloud.framework */,
-				367626C11B0F141D00D3681A /* AlipaySDK.framework */,
-				367626C21B0F141D00D3681A /* BCAliPay.framework */,
-				367626BF1B0F140A00D3681A /* BCWXPay.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -133,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				A8C208FD1A83924E0060DAE7 /* BeeCloudDemo.app */,
-				A8C209161A83924E0060DAE7 /* BeeCloudDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -199,24 +179,6 @@
 			productReference = A8C208FD1A83924E0060DAE7 /* BeeCloudDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A8C209151A83924E0060DAE7 /* BeeCloudDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A8C209231A83924E0060DAE7 /* Build configuration list for PBXNativeTarget "BeeCloudDemoTests" */;
-			buildPhases = (
-				A8C209121A83924E0060DAE7 /* Sources */,
-				A8C209131A83924E0060DAE7 /* Frameworks */,
-				A8C209141A83924E0060DAE7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A8C209181A83924E0060DAE7 /* PBXTargetDependency */,
-			);
-			name = BeeCloudDemoTests;
-			productName = BeeCloudDemoTests;
-			productReference = A8C209161A83924E0060DAE7 /* BeeCloudDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -229,10 +191,6 @@
 					A8C208FC1A83924E0060DAE7 = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = Y5MWN9388T;
-					};
-					A8C209151A83924E0060DAE7 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = A8C208FC1A83924E0060DAE7;
 					};
 				};
 			};
@@ -250,7 +208,6 @@
 			projectRoot = "";
 			targets = (
 				A8C208FC1A83924E0060DAE7 /* BeeCloudDemo */,
-				A8C209151A83924E0060DAE7 /* BeeCloudDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -263,13 +220,6 @@
 				A8C2090C1A83924E0060DAE7 /* Main.storyboard in Resources */,
 				A8C209111A83924E0060DAE7 /* LaunchScreen.xib in Resources */,
 				A8C2090E1A83924E0060DAE7 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A8C209141A83924E0060DAE7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,23 +236,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8C209121A83924E0060DAE7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A8C2091D1A83924E0060DAE7 /* BeeCloudDemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A8C209181A83924E0060DAE7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A8C208FC1A83924E0060DAE7 /* BeeCloudDemo */;
-			targetProxy = A8C209171A83924E0060DAE7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A8C2090A1A83924E0060DAE7 /* Main.storyboard */ = {
@@ -452,40 +386,6 @@
 			};
 			name = Release;
 		};
-		A8C209241A83924E0060DAE7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BeeCloudDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeeCloudDemo.app/BeeCloudDemo";
-			};
-			name = Debug;
-		};
-		A8C209251A83924E0060DAE7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BeeCloudDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeeCloudDemo.app/BeeCloudDemo";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -503,15 +403,6 @@
 			buildConfigurations = (
 				A8C209211A83924E0060DAE7 /* Debug */,
 				A8C209221A83924E0060DAE7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A8C209231A83924E0060DAE7 /* Build configuration list for PBXNativeTarget "BeeCloudDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A8C209241A83924E0060DAE7 /* Debug */,
-				A8C209251A83924E0060DAE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

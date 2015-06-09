@@ -34,34 +34,38 @@ FOUNDATION_EXPORT const unsigned char BCWXPayVersionString[];
 + (BOOL)handleOpenUrl:(NSURL *)url;
 
 /**
- *  微信支付调用接口.初始化wx_boby,wx_totalFee,wx_outTradeNo,wx_traceid后调用此接口发起微信支付，并跳转到微信。
+ *  微信支付调用接口.初始化boby,totalFee,outTradeNo,traceid后调用此接口发起微信支付，并跳转到微信。
  *  如果您申请的是新版本(V3)的微信支付，请使用此接口发起微信支付.
  *  您在BeeCloud控制台需要填写“微信Partner ID”、“微信Partner KEY”、“微信APP ID”.
  *
- *  @param wx_body       商品描述
- *  @param wx_totalFee   支付金额,以分为单位
- *  @param wx_outTradeNo 商户系统内部的订单号,32个字符内、包含数字与字母,确保在商户系统中唯一
- *  @param wx_traceId    支付用户ID，必须保证在商户系统中唯一
- *  @param optional      扩展参数，可以传入任意数量的key/value对来补充对业务逻辑的需求
- *  @param block         支付结果回调
+ *  @param body       商品描述
+ *  @param totalFee   支付金额,以分为单位
+ *  @param outTradeNo 商户系统内部的订单号,32个字符内、包含数字与字母,确保在商户系统中唯一
+ *  @param traceId    支付用户ID，必须保证在商户系统中唯一
+ *  @param optional   扩展参数，可以传入任意数量的key/value对来补充对业务逻辑的需求
+ *  @param block      支付结果回调
  */
-+ (void)reqWXPayV3:(NSString *)wx_body
-          totalFee:(NSString *)wx_totalFee
-        outTradeNo:(NSString *)wx_outTradeNo
-           traceID:(NSString *)wx_traceId
++ (void)reqWXPayV3:(NSString *)body
+          totalFee:(NSString *)totalFee
+        outTradeNo:(NSString *)outTradeNo
+           traceID:(NSString *)traceId
           optional:(NSDictionary *)optional
           payBlock:(BCPayBlock)block;
 
 /**
  *  根据out_trade_no，out_refund_no, refundReason,refundFee查询订单是否可退款，允许退款情况下自动生成预退款订单，否则返回不可退款原因。预退款订单生成成功后，在BeeCloud商户后台对预退款订单进行处理。
  *
- *  @param wx_outTradeNo   商户系统内部的支付订单号,32个字符内、包含数字与字母,确保在商户系统中唯一
- *  @param wx_outRefundNo  商户系统内部的退款订单号,32个字符内、包含数字与字母,确保在商户系统中唯一
- *  @param wx_refundReason 用户退款理由
- *  @param wx_refundFee    用户欲退款金额，以分为单位
- *  @param block           退款结果回调.如果预退款成功,success=YES;失败success=NO.
+ *  @param outTradeNo   商户系统内部的支付订单号,32个字符内、包含数字与字母,确保在商户系统中唯一
+ *  @param outRefundNo  商户系统内部的退款订单号,32个字符内、包含数字与字母,确保在商户系统中唯一
+ *  @param refundReason 用户退款理由
+ *  @param refundFee    用户欲退款金额，以分为单位
+ *  @param block        退款结果回调.如果预退款成功,success=YES;失败success=NO.
  */
-+ (void)reqWXRefundV3:(NSString *)wx_outTradeNo outRefundNo:(NSString *)wx_outRefundNo refundReason:(NSString *)wx_refundReason refundFee:(NSString *)wx_refundFee payBlock:(BCPayBlock)block;
++ (void)reqWXRefundV3:(NSString *)outTradeNo
+          outRefundNo:(NSString *)outRefundNo
+         refundReason:(NSString *)refundReason
+            refundFee:(NSString *)refundFee
+             payBlock:(BCPayBlock)block;
 
 /**
  *  根据商户自定义退款订单号查询退款状态。

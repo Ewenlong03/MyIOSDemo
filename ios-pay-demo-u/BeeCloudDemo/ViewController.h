@@ -10,7 +10,6 @@
 #import <BeeCloud/BeeCloud.h>
 #import <BCAliPay/BCAliPay.h>
 #import <BCWXPay/BCWXPay.h>
-//#import <BCUPersonalPay/BCUPersonalPay.h>
 #import <BCUnionPay/BCUnionPay.h>
 
 static NSString * const kBody = @"自制白开水";
