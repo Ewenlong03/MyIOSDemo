@@ -19,12 +19,32 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-     [BeeCloud initWithAppID:@"c5d1cba1-5e3f-4ba0-941d-9b0a371fe719" andAppSecret:@"39a7a518-9ac8-4a9e-87bc-7885f33cf18c"];
+  // [BeeCloud initWithAppID:@"c5d1cba1-5e3f-4ba0-941d-9b0a371fe719" andAppSecret:@"39a7a518-9ac8-4a9e-87bc-7885f33cf18c"];
+    [BeeCloud initWithAppID:@"0ab8c4ca-e7ec-4982-9b74-7e24f983039d" andAppSecret:@"9eac9406-dd87-4048-8a4a-c2db5fc09ecc"];
+    
+    /**
+     连接微信应用以使用相关功能，此应用需要引用WeChatConnection.framework和微信官方SDK
+     http://open.weixin.qq.com上注册应用，并将相关信息填写以下字段
+     **/
+  //  [ShareSDK registerApp:@"81828d6c7790"];
+    
+   // [ShareSDK connectWeChatWithAppId:@"wxf1aa465362b4c8f1" appSecret:@"b5b3eaefce394664768cf8a51aca052c" wechatCls:[WXApi class]];
     //[BeeCloud initWithAppID:@"18aa7652-e8cf-4dfa-96dc-6e9e6a7e3d24" andAppSecret:@"a03b40ab-ba9f-4c6a-8b77-7fe9b5971bf1"];
- //  [BeeCloud initWithAppID:@"f5df67b0-d322-4cc9-b764-3732ae62281a" andAppSecret:@"90168fde-b5af-4f2e-9894-c9fd23044502"];//v3
    // [BeeCloud initWithAppID:@"c45cff08-8b8f-4aa9-acc6-bcf266ae32d1" andAppSecret:@"1a7ded81-96a6-4fa3-9247-3868e246ccfe"];
   // [BeeCloud initWithAppID:@"447f27bf-76ca-4745-85d0-d1847dafc990" andAppSecret:@"95340620-1276-400b-ab3f-9d6467e8e07d"];
+   // [BeeCloud initWithAppID:@"c37d661d-7e61-49ea-96a5-68c34e83db3b" andAppSecret:@"c37d661d-7e61-49ea-96a5-68c34e83db3b"];
     [BeeCloud setWillPrintLog:YES];
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    if (BCPayUrlWeChat == [BCUtil getUrlType:url]) {
+        return [BCWXPay handleOpenUrl:url];
+    } else if (BCPayUrlAlipay == [BCUtil getUrlType:url]) {
+        return [BCAliPay handleOpenUrl:url];
+    } else {
+      
+    }
     return YES;
 }
 
@@ -34,7 +54,6 @@
     } else if (BCPayUrlAlipay == [BCUtil getUrlType:url]) {
         return [BCAliPay handleOpenUrl:url];
     } else {
-        //other url
     }
     return YES;
 }

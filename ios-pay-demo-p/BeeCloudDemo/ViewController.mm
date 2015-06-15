@@ -150,7 +150,7 @@
     NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"value",@"key", nil];
     NSString *outTradeNo = [BCUPersonalPay genOutTradeNo];
     
-    [BCUPersonalPay reqUPersonalPay:kTraceID body:kBody outTradeNo:outTradeNo totalFee:@"10" viewController:self optional:dict payblock:^(BOOL success, NSString *strMsg, NSError *error) {
+    [BCUPersonalPay reqUPersonalPay:kTraceID body:kBody outTradeNo:outTradeNo totalFee:@"8" viewController:self optional:dict payblock:^(BOOL success, NSString *strMsg, NSError *error) {
             if (success) {
                 //
             } else {
@@ -275,7 +275,7 @@
             [self wxRefund:_out_trade_no];
         }else if (paySegment.selectedSegmentIndex == 1) {
             [self aliRefund:_out_trade_no];
-        }else if (paySegment.selectedSegmentIndex ==2) {
+        }else if (paySegment.selectedSegmentIndex == 2) {
             [self unionRefund:_out_trade_no];
         }
     }

@@ -101,11 +101,12 @@
 - (void)aliPay {
     NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"value",@"key", nil];
     NSString *outTradeNo = [[BCUtil generateRandomUUID] stringByReplacingOccurrencesOfString:@"-" withString:@""];
+    //outTradeNo = @"2015061013200220101";
     [BCAliPay reqAliPayment:kTraceID outTradeNo:outTradeNo subject:kSubject body:kBody totalFee:@"0.01" scheme:@"payTestDemo" optional:dict payBlock:^(BOOL success, NSString *strMsg, NSError *error) {
         if (success) {
             // 表明支付成功
         } else {
-            // 表明支付过程中出现错误，strMsg为错误原因
+            // 表明支付过程中出现错误，strMsg为错误原因.
         }
         [self showAlertView:strMsg];
         
