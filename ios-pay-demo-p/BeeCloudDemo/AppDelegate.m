@@ -19,12 +19,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [BeeCloud setNetworkTimeout:3];
      [BeeCloud initWithAppID:@"c5d1cba1-5e3f-4ba0-941d-9b0a371fe719" andAppSecret:@"39a7a518-9ac8-4a9e-87bc-7885f33cf18c"];
     //[BeeCloud initWithAppID:@"18aa7652-e8cf-4dfa-96dc-6e9e6a7e3d24" andAppSecret:@"a03b40ab-ba9f-4c6a-8b77-7fe9b5971bf1"];
  //  [BeeCloud initWithAppID:@"f5df67b0-d322-4cc9-b764-3732ae62281a" andAppSecret:@"90168fde-b5af-4f2e-9894-c9fd23044502"];//v3
    // [BeeCloud initWithAppID:@"c45cff08-8b8f-4aa9-acc6-bcf266ae32d1" andAppSecret:@"1a7ded81-96a6-4fa3-9247-3868e246ccfe"];
   // [BeeCloud initWithAppID:@"447f27bf-76ca-4745-85d0-d1847dafc990" andAppSecret:@"95340620-1276-400b-ab3f-9d6467e8e07d"];
     [BeeCloud setWillPrintLog:YES];
+    
     return YES;
 }
 

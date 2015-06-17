@@ -19,6 +19,7 @@
 		367626D21B0F14DF00D3681A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367626D11B0F14DF00D3681A /* CoreGraphics.framework */; };
 		367626D41B0F14EC00D3681A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367626D31B0F14EC00D3681A /* SystemConfiguration.framework */; };
 		367626D61B0F14F900D3681A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367626D51B0F14F900D3681A /* MobileCoreServices.framework */; };
+		36A532F71B3141A9003BFBF0 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A532F61B3141A9003BFBF0 /* libWeChatSDK.a */; };
 		36D196F11B213F1400961989 /* BCUPersonalPay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D196F01B213F1400961989 /* BCUPersonalPay.framework */; };
 		A8C209031A83924E0060DAE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C209021A83924E0060DAE7 /* main.m */; };
 		A8C209061A83924E0060DAE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C209051A83924E0060DAE7 /* AppDelegate.m */; };
@@ -41,6 +42,7 @@
 		367626D11B0F14DF00D3681A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		367626D31B0F14EC00D3681A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		367626D51B0F14F900D3681A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		36A532F61B3141A9003BFBF0 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
 		36D196F01B213F1400961989 /* BCUPersonalPay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BCUPersonalPay.framework; sourceTree = "<group>"; };
 		A8C208FD1A83924E0060DAE7 /* BeeCloudDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeeCloudDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8C209011A83924E0060DAE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36A532F71B3141A9003BFBF0 /* libWeChatSDK.a in Frameworks */,
 				363486E51B2576B4003FA4DF /* BCAliPay.framework in Frameworks */,
 				363486E61B2576B4003FA4DF /* BCWXPay.framework in Frameworks */,
 				363486E71B2576B4003FA4DF /* BeeCloud.framework in Frameworks */,
@@ -83,6 +86,7 @@
 		82CB2211661D33E926B50F3F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				36A532F61B3141A9003BFBF0 /* libWeChatSDK.a */,
 				363486E11B2576B4003FA4DF /* BCAliPay.framework */,
 				363486E21B2576B4003FA4DF /* BCWXPay.framework */,
 				363486E31B2576B4003FA4DF /* BeeCloud.framework */,
@@ -355,6 +359,10 @@
 				INFOPLIST_FILE = BeeCloudDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -380,6 +388,10 @@
 				INFOPLIST_FILE = BeeCloudDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

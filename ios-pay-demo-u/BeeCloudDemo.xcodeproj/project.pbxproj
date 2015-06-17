@@ -12,6 +12,7 @@
 		363486DE1B256512003FA4DF /* BCWXPay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363486D91B256512003FA4DF /* BCWXPay.framework */; };
 		363486DF1B256512003FA4DF /* BeeCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363486DA1B256512003FA4DF /* BeeCloud.framework */; };
 		363486E01B256512003FA4DF /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363486DB1B256512003FA4DF /* AlipaySDK.framework */; };
+		3662B8971B2ED0E400661130 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3662B86E1B2EBC3100661130 /* libWeChatSDK.a */; };
 		367626C81B0F149A00D3681A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 367626C71B0F149A00D3681A /* libsqlite3.dylib */; };
 		367626CA1B0F14A300D3681A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 367626C91B0F14A300D3681A /* libz.dylib */; };
 		367626CC1B0F14AF00D3681A /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 367626CB1B0F14AF00D3681A /* libc++.dylib */; };
@@ -38,6 +39,7 @@
 		363486D91B256512003FA4DF /* BCWXPay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BCWXPay.framework; sourceTree = "<group>"; };
 		363486DA1B256512003FA4DF /* BeeCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeeCloud.framework; sourceTree = "<group>"; };
 		363486DB1B256512003FA4DF /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		3662B86E1B2EBC3100661130 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
 		367626C71B0F149A00D3681A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		367626C91B0F14A300D3681A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		367626CB1B0F14AF00D3681A /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
@@ -69,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3662B8971B2ED0E400661130 /* libWeChatSDK.a in Frameworks */,
 				36869B9D1B2AE1AD00AA0463 /* libz.1.2.5.dylib in Frameworks */,
 				36869B9B1B2AE1A000AA0463 /* libicucore.dylib in Frameworks */,
 				36869B991B2AE13600AA0463 /* QuartzCore.framework in Frameworks */,
@@ -95,6 +98,7 @@
 		82CB2211661D33E926B50F3F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3662B86E1B2EBC3100661130 /* libWeChatSDK.a */,
 				36869B9C1B2AE1AD00AA0463 /* libz.1.2.5.dylib */,
 				36869B9A1B2AE1A000AA0463 /* libicucore.dylib */,
 				36869B981B2AE13600AA0463 /* QuartzCore.framework */,
@@ -372,6 +376,10 @@
 					"$(PROJECT_DIR)/ShareSDK/Core",
 					"$(PROJECT_DIR)/ShareSDK",
 					"$(PROJECT_DIR)/ShareSDK/UI",
+					/Users/Ewenlong03/Downloads/ShareSDK/Connection,
+					/Users/Ewenlong03/Downloads/ShareSDK/Core,
+					/Users/Ewenlong03/Downloads/ShareSDK,
+					/Users/Ewenlong03/Downloads/ShareSDK/UI,
 				);
 				INFOPLIST_FILE = BeeCloudDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -379,6 +387,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ShareSDK/Extend/WeChatSDK",
+					"$(PROJECT_DIR)",
+					/Users/Ewenlong03/Downloads/ShareSDK/Extend/WeChatSDK,
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -405,6 +415,10 @@
 					"$(PROJECT_DIR)/ShareSDK/Core",
 					"$(PROJECT_DIR)/ShareSDK",
 					"$(PROJECT_DIR)/ShareSDK/UI",
+					/Users/Ewenlong03/Downloads/ShareSDK/Connection,
+					/Users/Ewenlong03/Downloads/ShareSDK/Core,
+					/Users/Ewenlong03/Downloads/ShareSDK,
+					/Users/Ewenlong03/Downloads/ShareSDK/UI,
 				);
 				INFOPLIST_FILE = BeeCloudDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -412,6 +426,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ShareSDK/Extend/WeChatSDK",
+					"$(PROJECT_DIR)",
+					/Users/Ewenlong03/Downloads/ShareSDK/Extend/WeChatSDK,
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

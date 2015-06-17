@@ -54,7 +54,6 @@
 // 通过该方法实现对各种参数的初始化，然后发起微信支付，并跳转到微信.
 - (void)wxPay {
     //wxf1aa465362b4c8f1 v3
-    //wx19433a59b15fe84d v2
     NSString *outTradeNo = [[BCUtil generateRandomUUID] stringByReplacingOccurrencesOfString:@"-" withString:@""];
     NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"value",@"key", nil];
     [BCWXPay reqWXPayV3:kBody totalFee:@"1" outTradeNo:outTradeNo traceID:kTraceID optional:dict payBlock:^(BOOL success, NSString *strMsg, NSError *error) {

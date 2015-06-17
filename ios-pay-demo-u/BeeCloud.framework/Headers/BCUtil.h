@@ -224,6 +224,13 @@
 + (NSString *)getAppID;
 
 /**
+ *  Load app info.
+ *
+ *  @param sync .
+ */
++ (void)loadAppInfo:(BOOL)sync;
+
+/**
  *  WeChat App ID
  *
  *  @return wechat appID
